@@ -1,0 +1,27 @@
+
+
+Где на сайте лучше всего разместить форму подписки?
+Думаю все мы хорошо знаем свои сайты и блоги не смотря на то, на каких платформах они находятся, по-этому проблем с установкой виджета возникнуть не должно. Так вот данную форму подписки лучше всего разместить либо в сайдбаре, либо же на странице с постами после их окончания.
+
+
+
+<div id="subscribebox">
+<div class="follow-subscribe-social">
+<ul>
+<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-google"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+<p>Subscribe to my Newsletter</p>
+<form class="subscribe" action='http://feedburner.google.com/fb/a/mailverify?uri=YOUR-USER-NAME' method='post' onsubmit='window.open(&apos;http://feedburner.google.com/fb/a/mailverify?uri=YOUR-USER-NAME, &apos;popupwindow&apos;, &apos;scrollbars=yes,width=550,height=520&apos;);return true' target='popupwindow'>
+<input name='uri' type='hidden' value='YOUR-USER-NAME'/>
+<input name='loc' type='hidden' value='en_US'/>
+<input class="subscribe-email" type='text' name='email' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Your Email&quot;;}' onfocus='if (this.value == &quot;Your Email&quot;) {this.value = &quot;&quot;;}' value='Your Email'/>
+<input class="subscribe-button" type="submit" value="Subscribe" />
+</form>
+</div>
